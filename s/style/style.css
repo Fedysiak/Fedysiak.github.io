@@ -12,7 +12,7 @@ html,
     font-family: "FI_LINO_mmm";
     src: url(fonts/MM1.ttf);
     font-family: "Helvetica";
-    src: url(fonts/9202);
+    src: url(fonts/9202.otf);
 }
 
 /*cursor*/
@@ -106,6 +106,14 @@ body {
 @media (max-width: 768px) {
     .sec1 {
         display: none;
+    }
+  
+    .navbar ul {
+        display: none;
+        flex-direction: column;
+    }
+    header.section:hover .navbar ul {
+        display: flex;
     }
 }
 
@@ -286,6 +294,8 @@ header {
         grid-column-end: 3;
     }
 }
+
+
 
 
 .sec1 {
